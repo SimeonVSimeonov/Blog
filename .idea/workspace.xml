@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c37b870a-59b3-4312-8197-599bec49ed04" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1hPhSGiUr7WjsPTR4Lyg8XtkYvr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Simeonovi\Desktop\Blog\app\Resources\views\users" />
+      <recent name="C:\Users\Simeonovi\Desktop\Blog\web\js" />
+      <recent name="C:\Users\Simeonovi\Desktop\Blog\web\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AppRun" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:run">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:run">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c37b870a-59b3-4312-8197-599bec49ed04" name="Default Changelist" comment="" />
+      <created>1599918635348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599918635348</updated>
+      <workItem from="1599918688267" duration="1067000" />
+      <workItem from="1599919806397" duration="19148000" />
+      <workItem from="1599950160477" duration="470000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599921413831">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599921413831" />
+    <state x="476" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1599937964642">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="476" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599937964642" />
+    <state x="456" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599919368069">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="456" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1599919368069" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599921143290">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599921143290" />
+    <state width="1325" height="214" key="GridCell.Tab.0.bottom" timestamp="1599950127681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1325" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599950127681" />
+    <state width="1325" height="214" key="GridCell.Tab.0.center" timestamp="1599950127681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1325" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599950127681" />
+    <state width="1325" height="214" key="GridCell.Tab.0.left" timestamp="1599950127681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1325" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599950127681" />
+    <state width="1325" height="214" key="GridCell.Tab.0.right" timestamp="1599950127681">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1325" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599950127681" />
+    <state width="316" height="456" key="HiddenNamespacesPopup" timestamp="1599921431058">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="316" height="456" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1599921431058" />
+    <state x="576" y="241" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1599921453359">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="576" y="241" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728@0.0.1366.728" timestamp="1599921453359" />
+    <state x="150" y="42" width="1165" height="656" key="find.popup" timestamp="1599948984410">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="150" y="42" width="1165" height="656" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599948984410" />
+  </component>
+</project>
