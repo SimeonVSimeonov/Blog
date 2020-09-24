@@ -10,6 +10,7 @@ class SecurityController extends Controller
 {
     /**
      * @Route("/login", name="security_login")
+     *
      * @return Response|null
      */
     public function login()

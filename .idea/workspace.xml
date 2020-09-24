@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c37b870a-59b3-4312-8197-599bec49ed04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/blog/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/blog/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/UsersController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

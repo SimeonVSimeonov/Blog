@@ -13,10 +13,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends Controller
 {
     /**
+     * @Route("article/create", name="article_create")
+     *
      * @param Request $request
      * @return Response|null
-     *
-     * @Route("article/create", name="article_create")
      */
     public function create(Request $request)
     {
@@ -25,7 +25,7 @@ class ArticleController extends Controller
 
         $form->handleRequest($request);
 
-        if ($form->isSubmitted()){
+        if ($form->isSubmitted() && $form->isValid()){
             $article->setAuthor($this->getUser());
             $em = $this->getDoctrine()->getManager();
             $em->persist($article);
@@ -34,6 +34,21 @@ class ArticleController extends Controller
 
         return $this->render("article/create.html.twig", [
             'form' => $form->createView()
+        ]);
+    }
+
+    /**
+     * @Route("/article/{id}", name="article_view")
+     *
+     * @param $id
+     * @return Response|null
+     */
+    public function viewArticle($id)
+    {
+        $article = $this->getDoctrine()->getRepository(Article::class)->find($id);
+
+        return $this->render('article/article.html.twig', [
+            'article' => $article
         ]);
     }
 }
