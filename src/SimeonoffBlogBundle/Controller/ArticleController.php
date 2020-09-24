@@ -85,4 +85,37 @@ class ArticleController extends Controller
             'form' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("/article/delete/{id}", name="article_delete")
+     *
+     * @param $id
+     * @param Request $request
+     *
+     */
+    public function delete($id, Request $request)
+    {
+        $article = $this->getDoctrine()->getRepository(Article::class)->find($id);
+
+        if ($article === null){
+            return $this->redirectToRoute("homepage");
+        }
+
+        $form = $this->createForm(ArticleType::class, $article);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()){
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($article);
+            $em->flush();
+
+            return $this->redirectToRoute("homepage");
+        }
+
+        return $this->render('article/delete.html.twig', [
+        'article' => $article,
+        'form' => $form->createView()
+    ]);
+    }
 }
