@@ -13,7 +13,7 @@ class UsersController extends Controller
 {
     /**
      * @Route("register", name="user_register")
-     * 
+     *
      * @param Request $request
      * @return Response
      */
