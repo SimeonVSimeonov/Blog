@@ -2,6 +2,7 @@
 
 namespace SimeonoffBlogBundle\Controller;
 
+use SimeonoffBlogBundle\Entity\Role;
 use SimeonoffBlogBundle\Entity\User;
 use SimeonoffBlogBundle\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -28,6 +29,11 @@ class UsersController extends Controller
                 ->encodePassword($user, $user->getPassword());
 
             $user->setPassword($password);
+
+            $roleRepository = $this->getDoctrine()->getRepository(Role::class);
+            $userRole = $roleRepository->findOneBy(['name' => 'ROLE_USER']);
+
+            $user->addRole($userRole);
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
