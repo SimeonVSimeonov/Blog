@@ -2,6 +2,7 @@
 
 namespace SimeonoffBlogBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use SimeonoffBlogBundle\Entity\Article;
 use SimeonoffBlogBundle\Form\ArticleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -47,6 +48,11 @@ class ArticleController extends Controller
     public function viewArticle($id)
     {
         $article = $this->getDoctrine()->getRepository(Article::class)->find($id);
+
+        $article->setViewCount($article->getViewCount() + 1);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($article);
+        $em->flush();
 
         return $this->render('article/article.html.twig', [
             'article' => $article
@@ -130,5 +136,23 @@ class ArticleController extends Controller
             'article' => $article,
             'form' => $form->createView()
         ]);
+    }
+
+    /**
+     * @Route("articles/my_articles", name="my_articles")
+     *
+     * @return Response|null
+     */
+    public function getAllArticlesByUser(){
+        $articles = $this->getDoctrine()
+            ->getRepository(Article::class)
+            ->findBy(['author' => $this->getUser()]);
+
+        return $this->render(
+            "article/my_articles.html.twig",
+            [
+                'articles' => $articles
+            ]
+        );
     }
 }

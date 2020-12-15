@@ -70,6 +70,12 @@ class Article
     private $author;
 
     /**
+     * @var integer
+     * @ORM\Column(name="view_count", type="integer")
+     */
+    private $viewCount;
+
+    /**
      * Get id
      *
      * @return int
@@ -205,6 +211,22 @@ class Article
         $this->author = $author;
 
         return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getViewCount()
+    {
+        return $this->viewCount;
+    }
+
+    /**
+     * @param int $viewCount
+     */
+    public function setViewCount($viewCount)
+    {
+        $this->viewCount = $viewCount;
     }
 
 
