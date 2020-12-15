@@ -20,7 +20,7 @@ services:
         resource: '../../src/SimeonoffBlogBundle/*'
         # you can exclude directories or files
         # but if a service is unused, it's removed anyway
-        exclude: '../../src/SimeonoffBlogBundle/{Entity,Repository,Tests}'
+        exclude: '../../src/SimeonoffBlogBundle/{Entity,Tests}'
 
     # controllers are imported separately to make sure they're public
     # and have a tag that allows actions to type-hint services

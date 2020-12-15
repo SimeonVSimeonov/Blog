@@ -2,7 +2,10 @@
 
 namespace SimeonoffBlogBundle\Repository;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Mapping;
+use SimeonoffBlogBundle\Entity\Role;
 
 /**
  * RoleRepository
@@ -12,4 +15,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class RoleRepository extends EntityRepository
 {
+    /**
+     * RoleRepository constructor.
+     * @param EntityManagerInterface $em
+     * @param Mapping\ClassMetadata|null $metaData
+     */
+    public function __construct(EntityManagerInterface $em, Mapping\ClassMetadata $metaData = null)
+    {
+        parent::__construct($em,
+            $metaData == null ?
+                new Mapping\ClassMetadata(Role::class) : $metaData);
+    }
 }

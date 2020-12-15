@@ -2,9 +2,9 @@
 
 namespace SimeonoffBlogBundle\Controller;
 
-use SimeonoffBlogBundle\Entity\Role;
 use SimeonoffBlogBundle\Entity\User;
 use SimeonoffBlogBundle\Form\UserType;
+use SimeonoffBlogBundle\Service\Users\UserServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,49 +13,52 @@ use Symfony\Component\Routing\Annotation\Route;
 class UsersController extends Controller
 {
     /**
-     * @Route("register", name="user_register")
+     * @var UserServiceInterface
+     */
+    private UserServiceInterface $userService;
+
+    /**
+     * UsersController constructor.
+     * @param UserServiceInterface $userService
+     */
+    public function __construct(UserServiceInterface $userService)
+    {
+        $this->userService = $userService;
+    }
+
+    /**
+     * @Route("register", name="user_register", methods={"GET"})
+     * @param Request $request
+     * @return Response|null
+     */
+    public function register(Request $request)
+    {
+        return $this->render("users/register.html.twig", [
+            'form' => $this->createForm(UserType::class)->createView()
+        ]);
+    }
+
+    /**
+     * @Route("register", methods={"POST"})
      *
      * @param Request $request
      * @return Response
      */
-    public function register(Request $request)
+    public function registerProcess(Request $request)
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
-
-        if ($form->isSubmitted()){
-            $password = $this->get('security.password_encoder')
-                ->encodePassword($user, $user->getPassword());
-
-            $user->setPassword($password);
-
-            $roleRepository = $this->getDoctrine()->getRepository(Role::class);
-            $userRole = $roleRepository->findOneBy(['name' => 'ROLE_USER']);
-
-            $user->addRole($userRole);
-
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($user);
-            $em->flush();
-            return $this->redirectToRoute('security_login');
-        }
-        return $this->render("users/register.html.twig", [
-            'form' => $form->createView()
-        ]);
+        $this->userService->save($user);
+        return $this->redirectToRoute('security_login');
     }
 
     /**
      * @Route("/profile", name="user_profile")
      */
     public function profile(){
-        $userRepository = $this->getDoctrine()
-            ->getRepository(User::class);
-
-        $currentUser = $userRepository->find($this->getUser());
-
         return $this->render("users/profile.html.twig",
-            ['user' => $currentUser]);
+            ['user' => $this->userService->currentUser()]);
     }
 
     /**
