@@ -146,9 +146,10 @@ class ArticleController extends Controller
      * @return Response|null
      */
     public function getAllArticlesByUser(){
-        $articles = $this->getDoctrine()
+        $articles = $this
+            ->getDoctrine()
             ->getRepository(Article::class)
-            ->findBy(['author' => $this->getUser()]);
+            ->findBy([], ['viewCount' => "DESC", 'dateAdded' => "DESC"]);
 
         return $this->render(
             "article/my_articles.html.twig",

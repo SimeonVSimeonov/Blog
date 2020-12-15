@@ -76,6 +76,12 @@ class Article
     private $viewCount;
 
     /**
+     * @var string
+     * @ORM\Column(name="image_url", type="string")
+     */
+    private $imageURL;
+
+    /**
      * Get id
      *
      * @return int
@@ -227,6 +233,22 @@ class Article
     public function setViewCount($viewCount)
     {
         $this->viewCount = $viewCount;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImageURL()
+    {
+        return $this->imageURL;
+    }
+
+    /**
+     * @param string $imageURL
+     */
+    public function setImageURL($imageURL)
+    {
+        $this->imageURL = $imageURL;
     }
 
 
