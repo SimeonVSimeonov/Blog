@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c37b870a-59b3-4312-8197-599bec49ed04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25155426-b01d-4d46-b32a-c85632c4495d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25155426-b01d-4d46-b32a-c85632c4495d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/article/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/article/article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimeonoffBlogBundle/Repository/ArticleRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
@@ -107,6 +109,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -147,6 +150,8 @@
       <workItem from="1599950160477" duration="2448000" />
       <workItem from="1600888327543" duration="15269000" />
       <workItem from="1600937518177" duration="851000" />
+      <workItem from="1603009957178" duration="10712000" />
+      <workItem from="1608020379302" duration="23974000" />
     </task>
     <servers />
   </component>
@@ -163,52 +168,77 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599921413831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599921413831" />
-    <state x="476" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1599937964642">
+    <state x="476" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1608073131670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="476" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599937964642" />
+    <state x="476" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1608073131670" />
     <state x="456" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599919368069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="456" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1599919368069" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600939484981">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608071622327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600939484981" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608071622327" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599921143290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599921143290" />
-    <state width="1325" height="214" key="GridCell.Tab.0.bottom" timestamp="1600938950521">
+    <state width="1325" height="214" key="GridCell.Tab.0.bottom" timestamp="1608073744659">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1325" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600938950521" />
-    <state width="1325" height="214" key="GridCell.Tab.0.center" timestamp="1600938950521">
+    <state width="1325" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608073744659" />
+    <state width="1325" height="214" key="GridCell.Tab.0.center" timestamp="1608073744658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1325" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600938950521" />
-    <state width="1325" height="214" key="GridCell.Tab.0.left" timestamp="1600938950521">
+    <state width="1325" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608073744658" />
+    <state width="1325" height="214" key="GridCell.Tab.0.left" timestamp="1608073744658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1325" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600938950521" />
-    <state width="1325" height="214" key="GridCell.Tab.0.right" timestamp="1600938950521">
+    <state width="1325" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608073744658" />
+    <state width="1325" height="214" key="GridCell.Tab.0.right" timestamp="1608073744658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1325" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600938950521" />
+    <state width="1325" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608073744658" />
     <state width="316" height="456" key="HiddenNamespacesPopup" timestamp="1599921431058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="316" height="456" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1599921431058" />
+    <state x="263" y="99" key="IDE.errors.dialog" timestamp="1608073731264">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="99" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1608073731264" />
+    <state x="320" y="88" key="NewPhpClassDialog" timestamp="1608073121948">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="320" y="88" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1608073121948" />
+    <state x="487" y="287" key="NewPhpFileDialog" timestamp="1608052834926">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="487" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608052834926" />
+    <state x="475" y="66" key="RollbackChangesDialog" timestamp="1608042008223">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="475" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608042008223" />
+    <state x="214" y="9" key="SettingsEditor" timestamp="1608052742891">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="214" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608052742891" />
     <state x="576" y="241" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1599921453359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="576" y="241" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728@0.0.1366.728" timestamp="1599921453359" />
+    <state x="565" y="230" width="373" height="267" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603043583665">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="565" y="230" width="373" height="267" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1603043583665" />
     <state x="150" y="42" width="1165" height="656" key="find.popup" timestamp="1599948984410">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
