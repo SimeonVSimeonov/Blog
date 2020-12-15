@@ -4,6 +4,12 @@
 
     <div class="container body-content">
         <div class="row">
+            {% for msg in app.session.flashBag.get('create') %}
+                <div class="alert alert-success" id="create">
+                    {{ msg }}
+                </div>
+            {% endfor %}
+
             {% for article in articles %}
                 <div class="col-md-6">
                     <article>

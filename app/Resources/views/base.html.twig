@@ -97,6 +97,11 @@ See http://symfony.com/doc/current/book/templating.html#template-inheritance-and
     <script src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
 {% endblock %}
 
+<script>
+    setTimeout(function () {
+        $('#create').fadeOut();
+    }, 1500)
+</script>
 </body>
 </html>
 

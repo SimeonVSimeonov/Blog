@@ -33,7 +33,9 @@ class ArticleController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($article);
             $em->flush();
-            return $this->redirectToRoute("my_articles");
+
+            $this->addFlash("create", "Created successfully");
+            return $this->redirectToRoute("homepage");
         }
 
         return $this->render("article/create.html.twig", [
