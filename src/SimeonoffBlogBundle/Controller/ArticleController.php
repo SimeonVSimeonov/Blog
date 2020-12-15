@@ -28,6 +28,7 @@ class ArticleController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $article->setViewCount(0);
             $article->setAuthor($this->getUser());
             $em = $this->getDoctrine()->getManager();
             $em->persist($article);
